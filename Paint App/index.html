@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" defer src="js/paint.js"></script>
+    <title>Paint App</title>
+    <h1 class="head">Simple Paint App</h1>
+    <style>
+        .head {
+            text-align: center;
+        }
+
+        .paint {
+            position: relative;
+            margin: 0px 100px 0px 100px;
+        }
+
+        #myCanvas {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        button {
+
+            background-color: ivory;
+            color: black;
+            size: 70px;
+            font-size: 20px;
+            border-radius: 10px;
+            border-color: black;
+            outline: whitesmoke;
+        }
+
+        button:hover {
+            background-color: grey;
+        }
+
+        button:active {
+            background-color: #727278;
+            box-shadow: 0 1px #666;
+            transform: translateY(4px);
+        }
+
+        #myCanvasOriginal {
+            background-color: whitesmoke;
+            border-radius: 15px;
+            border-color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="paint">
+        <canvas id="myCanvasOriginal" width="1300" height="480"></canvas>
+        <canvas id="myCanvas" width="1300" height="480"></canvas>
+    </div>
+
+    <div class="btn">
+        <button id="clr">
+            <div id="clear">Clear</div>
+        </button>
+    </div>
+
+</body>
+
+</html>
